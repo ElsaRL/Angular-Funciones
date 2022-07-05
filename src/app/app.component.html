@@ -1,0 +1,25 @@
+
+<h2>Listado de todas las empresas</h2>
+
+
+<div *ngFor="let empresa of empresas">
+<label><input  type="checkbox"  [(ngModel)]="empresa.checked"> {{empresa.name}}</label>
+</div>
+
+
+<p>
+<button (click)="deleteTenant()">Eliminar Empresa</button>
+</p>
+
+
+<p>
+Nombre de la empresa:<input type="text" [(ngModel)]="tenantValue">
+<button (click)="addTenant()">Crear Empresa</button>
+<button (click)="modifyTenant()">Modificar Empresa</button>
+</p>
+
+
+
+
+
+
